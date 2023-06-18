@@ -2,14 +2,14 @@ import { initializeApp } from 'firebase/app';
 
 // TODO: Replace the following with your app's Firebase project configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyDIR-VybnX-PYa1jqCxdnd_0lcnprnT0YU",
-    authDomain: "jackpet-cea7e.firebaseapp.com",
-    projectId: "jackpet-cea7e",
-    storageBucket: "jackpet-cea7e.appspot.com",
-    messagingSenderId: "106553612270",
-    appId: "1:106553612270:web:defd0e1169221d993720ff",
-    measurementId: "G-SFWRXC7V04"
-  };
+  apiKey: "AIzaSyBr2T8Etmq_qcUEJ1LzgpRdrKVwwPeobJA",
+  authDomain: "angelhaven-3f27b.firebaseapp.com",
+  projectId: "angelhaven-3f27b",
+  storageBucket: "angelhaven-3f27b.appspot.com",
+  messagingSenderId: "191213082500",
+  appId: "1:191213082500:web:9f33f6cc781a939a7cefd1",
+  measurementId: "G-39S3CLD151"
+};
 
 const firbaseApp = initializeApp(firebaseConfig);
 

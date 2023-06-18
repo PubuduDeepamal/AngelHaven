@@ -42,7 +42,7 @@ const auth = getAuth();
                 signInWithPopup(auth, provider)
                     .then((result) => {
                     this.isSignedIn =true;   
-                    this.$router.push('/voucher');    
+                    this.$router.push('/About');    
                     }).catch((error) => {
                        console.log(error);
                     });
@@ -81,6 +81,11 @@ p {
 .login-container .login-box {
     margin-top: 129px;
     margin-bottom: 63px;
+}
+
+#logingtitle{
+    font-size: 45.8px;
+    font-weight: bold; 
 }
 
 </style>

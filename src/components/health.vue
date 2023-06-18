@@ -4,7 +4,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h3 class="faqsection" style="font-size: 45.8px;">Advice</h3>
+          <h3 class="faqsection" style="font-size: 45.8px;font-weight: bold;">Advice</h3>
         </div>
 
         <div class="row justify-content-center">

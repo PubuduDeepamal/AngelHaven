@@ -10,7 +10,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                    <h1 class="display-5 mb-4"><b>Welcome to Angel Haven Orphanage!</b></h1>
+                    <h1 class="display-5 mb-4" style="font-size: 45.8px; font-weight: bold; color: black;">Welcome to Angel Haven Orphanage!</h1>
                     <p class="mb-4">Angel Haven Orphanage is a loving and nurturing home for orphaned children in need. Our mission is to provide a safe and supportive environment where children can heal, grow, and thrive. At Angel Haven, we believe that every child deserves love, care, and the opportunity to build a brighter future.</p>
                     <p class="me-3">Our dedicated staff members are committed to creating a family-like atmosphere where children feel valued, cherished, and encouraged to reach their full potential. We prioritize the physical, emotional, and educational needs of each child, ensuring that they receive comprehensive care and individual attention.</p>
                     <p class="me-3">In Angel Haven, children are provided with nutritious meals, comfortable accommodation, and access to quality healthcare. We also offer a well-rounded education, providing opportunities for academic development, creative expression, and recreational activities. Our goal is to equip each child with the skills and knowledge they need to succeed in life.</p>
@@ -24,7 +24,7 @@
     <div class="container-fluid bg-light bg-icon py-6">
     <div class="container">
         <div class="section-header text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-            <h1 class="display-5 mb-3"><b>Why choose Angel Haven Orphanage?</b></h1>
+            <h1 class="display-5 mb-3" style="font-size: 45.8px; font-weight: bold; color: black;">Why choose Angel Haven Orphanage?</h1>
         </div>
         <div class="row g-4">
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">

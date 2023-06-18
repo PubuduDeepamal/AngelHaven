@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <div class="section-header text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-            <h2 id="producttittle">Employee Details</h2>
+            <h2 id="producttittle" style="font-size: 45.8px; font-weight: bold;">Employee Details</h2>
         </div>
 
         <div class="row">

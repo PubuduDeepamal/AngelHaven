@@ -11,7 +11,7 @@
         </div>
         
         <div class="mt-4">
-          <h2 class="text-center text-xl font-bold mb-2" id="Donationtittle"><b>How Your Donation Helps Animals</b></h2>
+          <h2 class="text-center text-xl font-bold mb-2" id="Donationtittle" style="font-size: 45.8px; font-weight: bold;">How Your Donation Helps Animals</h2>
           <p class="text-gray-600 text-center">Your support is greatly appreciated. Help us make a difference by making a donation today.</p>
         </div>
         

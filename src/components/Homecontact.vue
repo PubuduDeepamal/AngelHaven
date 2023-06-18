@@ -3,7 +3,7 @@
   <br><br><br><br>
 
 <div class="section-title">
-    <h3 class="faqsection" style="font-size: 45.8px;">Contact Us</h3>
+    <h3 class="faqsection" style="font-size: 45.8px;font-weight: bold;margin-top: -50px;">Contact Us</h3>
  </div>
 
   <!-- Wrapper container -->
@@ -32,7 +32,7 @@
 
   <!-- Form submit button -->
   <div class="d-grid">
-    <button class="btn btn-primary btn-lg" type="submit">Submit</button>
+    <button class="btn btn-primary btn-lg" type="submit"><b>Submit</b></button>
   </div>
 
 </form>

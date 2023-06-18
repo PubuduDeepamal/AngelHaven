@@ -2,25 +2,25 @@
 <template>
     <br><br>
     <div id="backcolour">
-        <h1 style="text-align:center; margin-top: 30px;font-size: 45.8px;margin-bottom: 37px;">Required Meal Plan</h1>
+        <h1 style="text-align:center; margin-top: 30px;font-size: 45.8px;margin-bottom: 37px;font-weight: bold">Required Meal Plan</h1>
   
         <div class="card-container">
             <div class="card">
-                <h1>Brackfast</h1>
+                <h1 style="font-weight: bold">Brackfast</h1>
                 <p>Rice</p>
                 <p>String Hoppers</p>
                 <p>Bred</p>
             </div>
   
             <div class="card">
-                <h1>Lunch</h1>
+                <h1 style="font-weight: bold">Lunch</h1>
                 <p>Rice and Curry</p>
                  <p>Fried rice</p>
 
             </div>
   
             <div class="card">
-                <h1>Dinner</h1>
+                <h1 style="font-weight: bold">Dinner</h1>
                 <p>Rice</p>
                 <p>String Hoppers</p>
                 <p>Bred</p>
