@@ -10,7 +10,7 @@
             <ul class="menu-items">
                 <li><a @click="showLogoutPopup"><RouterLink to="/Loging">Logout</RouterLink></a></li>
             </ul>
-            <h1 class="logo">JackPets</h1>
+            <h1 class="logo">AngelHaven</h1>
         </div>
     </nav>
 </template>
@@ -20,7 +20,7 @@ export default {
     methods: {
         showLogoutPopup() {
             // Display your pop-up message here
-            alert('Are you sure you want to go back? (Please take a screenshot and bring it when you come to our showroom.)');
+            alert('Are you sure you want to go back?');
         }
     }
 };
