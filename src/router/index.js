@@ -25,9 +25,9 @@ const router = createRouter({
       component: () => import('../views/Loging.vue')
     },
     {
-      path: '/contact',
-      name: 'contact',
-      component: () => import('../views/contact.vue')
+      path: '/mealplain',
+      name: 'mealplain',
+      component: () => import('../views/mealplain.vue')
     }
   ]
 })

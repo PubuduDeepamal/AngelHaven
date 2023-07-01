@@ -42,7 +42,7 @@ const auth = getAuth();
                 signInWithPopup(auth, provider)
                     .then((result) => {
                     this.isSignedIn =true;   
-                    this.$router.push('/About');    
+                    this.$router.push('/mealplain');    
                     }).catch((error) => {
                        console.log(error);
                     });
