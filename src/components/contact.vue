@@ -15,7 +15,7 @@
         </div>
         <div class="mb-3">
           <label for="contact" class="form-label">Contact Number</label>
-          <input v-model="contact" id="contact" class="form-control" placeholder="Enter Contact Number" required>
+          <input v-model="contact" type="number" id="contact" class="form-control" placeholder="Enter Contact Number" required>
         </div>
         <div class="mb-3">
           <label for="Message" class="form-label">Message</label>
@@ -23,17 +23,6 @@
         </div>
         <button @click="createUser" class="btn btn-primary" style="margin-top: 20px; margin-bottom: 30px; color: black; background: white; border: 1px solid #f0d8b6; width: 100%;"><b>Submit</b></button>
 
-        <div v-if="userCreated" class="mt-3">
-          <div class="card">
-            <div class="card-body">
-              <h2 class="card-title faqsection" style="font-size: 35.8px; font-weight: bold; margin-top: 20px;">Submit Details</h2>
-              <p class="card-text"><strong>First Name:</strong> {{ userData.firstName }}</p>
-              <p class="card-text"><strong>Last Name:</strong> {{ userData.lastName }}</p>
-              <p class="card-text"><strong>Contact Number:</strong> {{ userData.contact }}</p>
-              <p class="card-text"><strong>Message:</strong> {{ userData.Message }}</p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </div>

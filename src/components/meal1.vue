@@ -1,74 +1,36 @@
-<!-- <template>
-  <div>
-    <table>
-      <thead>
-        <tr>
-          <th>Message</th>
-          <th>Contact</th>
-          <th>First Name</th>
-          <th>Last Name</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr v-for="user in users" :key="user.key">
-          <td>{{ user.message }}</td>
-          <td>{{ user.contact }}</td>
-          <td>{{ user.firstName }}</td>
-          <td>{{ user.lastName }}</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</template>
-
-<script>
-import { db } from '@/firebase.js';
-
-export default {
-  data() {
-    return {
-      users: []
-    };
-  },
-  mounted() {
-    this.fetchUserData();
-  },
-  methods: {
-    fetchUserData() {
-      const usersRef = db.ref('users');
-
-      usersRef.on('value', snapshot => {
-        this.users = [];
-
-        snapshot.forEach(childSnapshot => {
-          const user = childSnapshot.val();
-          user.key = childSnapshot.key;
-          this.users.push(user);
-        });
-      });
-    }
-  }
-};
-</script> -->
-
 <template>
-  <br><br><br><br><br><br>
-  <div class="container">
+  <div class="container" style="background: #f8f8f8; border-radius: 10px;">
+    <div class="section-title">
+      <br>
+      <h3 class="faqsection" style="font-size: 45.8px; font-weight: bold; margin-top: 40px;">Donate</h3>
+    </div>
     <div class="row">
       <div class="col-md-6 offset-md-3">
         <div class="mb-3">
-          <label for="Date1" class="form-label">Date</label>
-          <input v-model="Date1" id="Date1" class="form-control" placeholder="Enter Date" required>
+          <label for="firstName" class="form-label">First Name</label>
+          <input v-model="firstName" id="firstName" class="form-control" placeholder="Enter First Name" required>
         </div>
         <div class="mb-3">
-          <label for="Meal" class="form-label">Meal</label>
-          <input v-model="Meal" id="Meal" class="form-control" placeholder="Enter Meal" required>
+          <label for="lastName" class="form-label">Last Name</label>
+          <input v-model="lastName" id="lastName" class="form-control" placeholder="Enter Last Name" required>
         </div>
         <div class="mb-3">
-          <label for="Portion" class="form-label">Portion</label>
-          <input v-model="Portion" id="Portion" class="form-control" placeholder="Enter Portion" required>
+          <label for="contact" class="form-label">Contact Number</label>
+          <input v-model="contact" type="number" id="contact" class="form-control" placeholder="Enter Contact Number" required>
         </div>
-
+        <div class="mb-3">
+          <label for="dateInput" class="form-label">Date</label>
+          <input type="date" v-model="dateInput" id="dateInput" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label for="Meal" class="form-label">Meal Type</label>
+          <input v-model="Meal" id="Meal" class="form-control" placeholder="Enter Meal Type" required>
+        </div>
+        <div class="mb-3">
+          <label for="Position" class="form-label">Position</label>
+          <input v-model="Position" type="number" id="Position" class="form-control" placeholder="Enter Position" required>
+        </div>
+       
         <button @click="createUser" class="btn btn-primary" style="margin-top: 20px; margin-bottom: 30px; color: black; background: white; border: 1px solid #f0d8b6; width: 100%;"><b>Submit</b></button>
 
       </div>
@@ -83,9 +45,12 @@ import db from '../firebase/init.js';
 export default {
   data() {
     return {
-      Date1: '',
+      firstName: '',
+      lastName: '',
+      contact: '',
+      dateInput:'',
       Meal: '',
-      Portion: '',
+      Position: '',
       userCreated: false,
       userData: {}
     };
@@ -93,11 +58,14 @@ export default {
 
   methods: {
     async createUser() {
-      const colRef = collection(db, 'meal');
+      const colRef = collection(db, 'booking');
       const dataObj = {
-        Date1: this.Date1,
+        firstName: this.firstName,
+        lastName: this.lastName,
+        contact: this.contact,
+        dateInput: this.dateInput,
         Meal: this.Meal,
-        Portion: this.Portion
+        Position: this.Position
       };
 
       const docRef = await addDoc(colRef, dataObj);
@@ -114,7 +82,6 @@ export default {
   }
 };
 </script>
-
 
 
 

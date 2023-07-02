@@ -1,20 +1,22 @@
 <template> 
     <nav class="navbar">
         <div class="navbar-container container">
-            <input type="checkbox" name="lb2" id="lb2">
+            <input type="checkbox" name="lb1" id="lb1">
             <div class="hamburger-lines">
                 <span class="line line1"></span>
                 <span class="line line2"></span>
                 <span class="line line3"></span>
             </div>
             <ul class="menu-items">
-                <li><a @click="showLogoutPopup"><RouterLink to="/Loging">Logout</RouterLink></a></li>
+                <li><RouterLink to="/adminhome">Contact Us View</RouterLink></li>
+                <li><RouterLink to="adminhome1">Booking View</RouterLink></li>
+                <li><RouterLink to="adminhome2">Booking Update</RouterLink></li>
+                <li><a @click="showLogoutPopup"><RouterLink to="/adminlogin">Logout</RouterLink></a></li>
             </ul>
-            <h1 class="logo">AngelHaven</h1>
+            <h1 class="logo"><b>AngelHaven Admin</b></h1>
         </div>
     </nav>
 </template>
-
 
 <script>
 export default {
@@ -26,7 +28,6 @@ export default {
     }
 };
 </script>
-
 
 <style scoped>
 *,

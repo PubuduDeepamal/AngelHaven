@@ -28,7 +28,27 @@ const router = createRouter({
       path: '/mealplain',
       name: 'mealplain',
       component: () => import('../views/mealplain.vue')
-    }
+    },
+    {
+      path: '/adminhome',
+      name: 'adminhome',
+      component: () => import('../views/adminhome.vue')
+    },
+    {
+      path: '/adminhome1',
+      name: 'adminhome1',
+      component: () => import('../views/adminhome1.vue')
+    },
+    {
+      path: '/adminhome2',
+      name: 'adminhome2',
+      component: () => import('../views/adminhome2.vue')
+    },
+    {
+      path: '/adminlogin',
+      name: 'adminlogin',
+      component: () => import('../views/adminlogin.vue')
+    },
   ]
 })
 

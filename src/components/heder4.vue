@@ -1,32 +1,19 @@
 <template> 
     <nav class="navbar">
         <div class="navbar-container container">
-            <input type="checkbox" name="lb2" id="lb2">
+            <input type="checkbox" name="lb1" id="lb1">
             <div class="hamburger-lines">
                 <span class="line line1"></span>
                 <span class="line line2"></span>
                 <span class="line line3"></span>
             </div>
             <ul class="menu-items">
-                <li><a @click="showLogoutPopup"><RouterLink to="/Loging">Logout</RouterLink></a></li>
+                <li><RouterLink to="/">Home</RouterLink></li>
             </ul>
-            <h1 class="logo">AngelHaven</h1>
+            <h1 class="logo"><b>AngelHaven</b></h1>
         </div>
     </nav>
 </template>
-
-
-<script>
-export default {
-    methods: {
-        showLogoutPopup() {
-            // Display your pop-up message here
-            alert('Are you sure you want to go back?');
-        }
-    }
-};
-</script>
-
 
 <style scoped>
 *,
