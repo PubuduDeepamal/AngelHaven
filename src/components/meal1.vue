@@ -73,6 +73,8 @@ export default {
 
       this.userCreated = true;
       this.userData = dataObj;
+
+      alert('Form submitted successfully!'); // Display the alert message
     }
   },
 
@@ -82,6 +84,3 @@ export default {
   }
 };
 </script>
-
-
-

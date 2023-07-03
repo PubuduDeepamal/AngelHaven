@@ -33,9 +33,15 @@ export default {
   },
   methods: {
     handleSignIn() {
-      if (this.username === 'admin' && this.password === '1234') {
+      if (this.username === 'user1' && this.password === 'password1') {
         this.isSignedIn = true;
         this.$router.push('/adminhome');
+      } else if (this.username === 'user2' && this.password === 'password2') {
+        this.isSignedIn = true;
+        this.$router.push('/adminhome');
+      } else if (this.username === 'user3' && this.password === 'password3') {
+        this.isSignedIn = true;
+        this.$router.push('/Moderatehome');
       } else {
         alert('Invalid username or password');
       }
@@ -50,32 +56,28 @@ export default {
 </script>
 
 
-  
-  <style src="../assets/style/loging.css"></style>
-  <style src="../assets/scss/loging.scss"></style>
-  
-  <style scoped>
-  @media (max-width:850px) {
-      .login-container .login-box 
-      {
-           width: 340px;
-      }
-      
-  }
-  
-  p {
-    text-align: center;
-    margin-bottom: 2.5rem;
-  }
-  
-  .login-container .login-box {
-      margin-top: 129px;
-      margin-bottom: 63px;
-  }
-  
-  #logingtitle{
-      font-size: 45.8px;
-      font-weight: bold; 
-  }
-  
-  </style>
+<style src="../assets/style/loging.css"></style>
+<style src="../assets/scss/loging.scss"></style>
+
+<style scoped>
+@media (max-width:850px) {
+    .login-container .login-box {
+        width: 340px;
+    }
+}
+
+p {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.login-container .login-box {
+    margin-top: 129px;
+    margin-bottom: 63px;
+}
+
+#logingtitle{
+    font-size: 45.8px;
+    font-weight: bold; 
+}
+</style>

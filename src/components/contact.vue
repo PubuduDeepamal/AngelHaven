@@ -22,7 +22,7 @@
           <textarea v-model="Message" id="Message" class="form-control" rows="3" placeholder="Message" required></textarea>
         </div>
         <button @click="createUser" class="btn btn-primary" style="margin-top: 20px; margin-bottom: 30px; color: black; background: white; border: 1px solid #f0d8b6; width: 100%;"><b>Submit</b></button>
-
+      
       </div>
     </div>
   </div>
@@ -59,15 +59,13 @@ export default {
 
       this.userCreated = true;
       this.userData = dataObj;
-    }
-  },
 
-  created() {
-    // Optional: You can call createUser on component creation if needed.
-    // this.createUser();
+      alert('Form submitted successfully!'); // Display the alert message
+    }
   }
 };
 </script>
+
 
 
 

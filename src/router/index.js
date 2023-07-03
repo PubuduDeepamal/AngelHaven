@@ -49,6 +49,16 @@ const router = createRouter({
       name: 'adminlogin',
       component: () => import('../views/adminlogin.vue')
     },
+    {
+      path: '/Moderatehome',
+      name: 'Moderatehome',
+      component: () => import('../views/Moderatehome.vue')
+    },
+    {
+      path: '/Moderatehome1',
+      name: 'Moderatehome1',
+      component: () => import('../views/Moderatehome1.vue')
+    },
   ]
 })
 
