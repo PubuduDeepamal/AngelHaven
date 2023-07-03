@@ -12,7 +12,7 @@
                 <li><RouterLink to="/Moderatehome1">Booking View</RouterLink></li>
                 <li><a @click="showLogoutPopup"><RouterLink to="/adminlogin">Logout</RouterLink></a></li>
             </ul>
-            <h1 class="logo"><b>AngelHaven Moderate</b></h1>
+            <h1 class="logo"><b>AngelHaven</b></h1>
         </div>
     </nav>
 </template>
