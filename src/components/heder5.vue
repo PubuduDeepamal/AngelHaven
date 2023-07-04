@@ -8,7 +8,7 @@
                 <span class="line line3"></span>
             </div>
             <ul class="menu-items">
-                <li><RouterLink to="/Moderatehome">Contact Us View</RouterLink></li>
+                <li><RouterLink to="/Moderatehome">Contact View</RouterLink></li>
                 <li><RouterLink to="/Moderatehome1">Booking View</RouterLink></li>
                 <li><a @click="showLogoutPopup"><RouterLink to="/adminlogin">Logout</RouterLink></a></li>
             </ul>

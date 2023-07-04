@@ -18,14 +18,15 @@
           <label for="productQuantity" class="form-label">Product Quantity</label>
           <input v-model="productQuantity" type="number" id="productQuantity" class="form-control" placeholder="Enter Product Quantity" required>
         </div>
-        <button @click="createProduct" class="btn btn-primary" style="margin-top: 20px; margin-bottom: 30px; color: black; background: white; border: 1px solid #f0d8b6; width: 100%;"><b>Submit</b></button>
+        <button @click="createProduct" class="btn btn-primary" style="margin-top: 20px; color: black; background: white; border: 1px solid #f0d8b6; width: 100%;"><b>Submit</b></button>
+        <button @click="updateProduct" class="btn btn-primary" style="margin-top: 20px; margin-bottom: 0px; color: black; background: white; border: 1px solid #f0d8b6; width: 100%;"><b>Update</b></button>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import { collection, addDoc } from "firebase/firestore";
+import { collection, addDoc, doc, updateDoc, getDoc } from "firebase/firestore";
 import db from '../firebase/init.js';
 
 export default {
@@ -35,6 +36,7 @@ export default {
       productName: '',
       productQuantity: '',
       productCreated: false,
+      productUpdated: false,
       productData: {}
     };
   },
@@ -54,8 +56,36 @@ export default {
       this.productCreated = true;
       this.productData = dataObj;
 
-      alert('Data Add successfully!'); // Display the alert message
+      alert('Data added successfully!');
+    },
+
+    async updateProduct() {
+      const docRef = doc(db, 'product', this.productId);
+      const docSnapshot = await getDoc(docRef);
+
+      if (docSnapshot.exists()) {
+        await updateDoc(docRef, {
+          productName: this.productName,
+          productQuantity: this.productQuantity
+        });
+
+        console.log('Document was updated');
+
+        this.productUpdated = true;
+        this.productData = {
+          productId: this.productId,
+          productName: this.productName,
+          productQuantity: this.productQuantity
+        };
+
+        alert('Data updated successfully!');
+      } else {
+        alert('Document does not exist. Unable to update data.');
+      }
     }
   }
 };
 </script>
+
+
+
