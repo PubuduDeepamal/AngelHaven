@@ -1,5 +1,5 @@
 <template>
-  <br><br><br>
+  <br>
     <div class="container">
         <div class="section-title">
           <h3 class="faqsection" style="font-size: 45.8px; font-weight: bold; margin-top: 40px;">Booking Details</h3>

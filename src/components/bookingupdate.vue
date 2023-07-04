@@ -56,7 +56,7 @@ export default {
       this.userCreated = true;
       this.userData = dataObj;
 
-      alert('Data Add submitted successfully!'); // Display the alert message
+      alert('Data Add Successfully!'); // Display the alert message
     }
   },
 

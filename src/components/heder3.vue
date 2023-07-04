@@ -8,9 +8,9 @@
                 <span class="line line3"></span>
             </div>
             <ul class="menu-items">
-                <li><RouterLink to="/adminhome">Contact Us View</RouterLink></li>
+                <li><RouterLink to="/adminhome">View</RouterLink></li>
                 <li><RouterLink to="adminhome1">Booking View</RouterLink></li>
-                <li><RouterLink to="adminhome2">Booking Update</RouterLink></li>
+                <li><RouterLink to="adminhome2">Update</RouterLink></li>
                 <li><a @click="showLogoutPopup"><RouterLink to="/adminlogin">Logout</RouterLink></a></li>
             </ul>
             <h1 class="logo"><b>AngelHaven</b></h1>
