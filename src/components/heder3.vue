@@ -9,7 +9,7 @@
             </div>
             <ul class="menu-items">
                 <li><RouterLink to="/adminhome">View</RouterLink></li>
-                <li><RouterLink to="adminhome1">Booking View</RouterLink></li>
+                <li><RouterLink to="adminhome1">Materials Management</RouterLink></li>
                 <li><RouterLink to="adminhome2">Update</RouterLink></li>
                 <li><a @click="showLogoutPopup"><RouterLink to="/adminlogin">Logout</RouterLink></a></li>
             </ul>
