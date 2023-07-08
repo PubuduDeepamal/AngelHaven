@@ -31,13 +31,13 @@
       
 <script>
 
-import pethealth from '../assets/json/health.json'
+import health from '../assets/json/health.json'
 
     export default {
 
         data() {
             return {
-            health: pethealth,
+            health: health,
             };
         },   
     };
