@@ -59,6 +59,11 @@ const router = createRouter({
       name: 'Moderatehome1',
       component: () => import('../views/Moderatehome1.vue')
     },
+    {
+      path: '/CRM',
+      name: 'CRM',
+      component: () => import('../views/CRM.vue')
+    },
   ]
 })
 
